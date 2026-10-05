@@ -77,16 +77,10 @@ body {
   max-width: 700px;
 }
 
-.features-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .feature-item {
   background-color: var(--bg-light);
   border: 1px solid var(--border-color);
   transition: var(--transition-normal);
-  min-width: 250px;
 }
 
 .feature-item:hover {
@@ -215,4 +209,53 @@ body {
 .btn-success:focus {
   background-color: #146c43;
   box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.4);
+}
+
+.contact-card {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+}
+
+@media (max-width: 991.98px) {
+  .custom-header .navbar-collapse {
+    flex-basis: 100%;
+  }
+
+  .custom-header .navbar-nav {
+    align-items: flex-start;
+    padding-top: 0.5rem;
+  }
+
+  .custom-header .navbar-nav .nav-link {
+    padding-right: 0.25rem !important;
+    padding-left: 0.25rem !important;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  main.container {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .about-hero {
+    padding: 2rem 1rem !important;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card__image-container {
+    height: 240px;
+  }
+
+  .contact-card {
+    padding: 1.25rem !important;
+  }
 }

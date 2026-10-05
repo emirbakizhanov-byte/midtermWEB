@@ -12,11 +12,14 @@
 </head>
 <body>
 
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand font-weight-bold" href="index.html">ElectroTech</a>
-            <nav>
-                <ul class="navbar-nav d-flex flex-row gap-3">
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top custom-header">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ElectroTech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto gap-lg-3">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="compare.html">Compare</a></li>
@@ -89,5 +92,6 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

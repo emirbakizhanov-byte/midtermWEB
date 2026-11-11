@@ -189,6 +189,30 @@ body {
   font-size: 1.1rem;
 }
 
+#productTable tbody tr:first-child td {
+  font-weight: normal;
+  color: inherit;
+  font-size: inherit;
+}
+
+#productTable td:first-child,
+#productTable td:nth-child(n+4) {
+  text-align: center;
+}
+
+#productTable .actions-cell {
+  white-space: nowrap;
+}
+
+#productTable .row-highlight td {
+  background-color: rgba(25, 135, 84, 0.15);
+}
+
+#productTable td.stock-low {
+  color: #dc3545;
+  font-weight: 700;
+}
+
 .card {
   transition: var(--transition-normal);
   border-radius: var(--radius-md);

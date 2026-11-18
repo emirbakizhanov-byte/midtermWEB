@@ -55,6 +55,17 @@
             </div>
         </div>
 
+        <section class="mb-5" aria-labelledby="apiHeading">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="h4 m-0" id="apiHeading">Live API Products</h2>
+                <button type="button" id="reloadApiBtn" class="btn btn-outline-secondary btn-sm">Refresh 🔄</button>
+            </div>
+            <div id="apiStatusMessage" class="alert alert-danger" style="display: none;" role="alert"></div>
+            <div class="row g-4" id="apiProductList"></div>
+        </section>
+
+        <hr class="mb-5">
+
         <section class="row g-4" id="productList">
             
             <article class="col-md-4 product-item" data-category="smartphones">
@@ -204,10 +215,12 @@
         </div>
     </div>
 
-  <footer class="text-center py-4 text-muted bg-dark text-light">
-    <p class="mb-1">&copy; 2026 ElectroTech Store. All rights reserved.</p>
-    <p class="small text-secondary mb-0">Minor AI assistance utilized for syntax checking.</p>
-</footer>
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 ElectroTech Store. All rights reserved.</p>
+            <p class="small text-white-50 mb-0">Minor AI assistance utilized for syntax checking.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

@@ -13,25 +13,25 @@ $(function () {
             $apiContainer.html(`
                 <div class="col-12 text-center py-4">
                     <div class="spinner-border text-primary" role="status">
-                        <span class="visually-hidden">Загрузка...</span>
+                        <span class="visually-hidden">Loading...</span>
                     </div>
-                    <p class="text-muted mt-2">Загрузка данных...</p>
+                    <p class="text-muted mt-2">Loading products...</p>
                 </div>
             `);
         }
 
         try {
-            // Запрашиваем только категорию электроники
+            // Request only the electronics category
             const response = await fetch('https://fakestoreapi.com/products/category/electronics?limit=3');
 
             if (!response.ok) {
-                throw new Error(`Ошибка сервера: ${response.status}`);
+                throw new Error(`Server error: ${response.status}`);
             }
 
             const data = await response.json();
 
             if (!data || data.length === 0) {
-                throw new Error('Пустой список данных');
+                throw new Error('No products found');
             }
 
             renderApiProducts(data);
@@ -39,7 +39,7 @@ $(function () {
         } catch (error) {
             if ($apiContainer.length) $apiContainer.html('');
             if ($errorAlert.length) {
-                $errorAlert.text(`Не удалось загрузить данные из API: ${error.message}`).fadeIn();
+                $errorAlert.text(`Could not load products from the API: ${error.message}`).fadeIn();
             }
         }
     }

@@ -24,6 +24,24 @@
   --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
+[data-bs-theme="dark"] {
+  --bg-light: #2b3035;
+  --bg-card: #212529;
+  --border-color: #3d444b;
+  --text-dark: #e9ecef;
+  --text-muted: #adb5bd;
+  --shadow-subtle: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+[data-bs-theme="dark"] .about-hero {
+  background: linear-gradient(135deg, #2b3035 0%, #1a1d20 100%);
+}
+
+[data-bs-theme="dark"] .team-card__image-container {
+  background-color: #2b3035;
+}
+
 body {
   font-family: var(--font-base);
   color: var(--text-dark);
@@ -66,6 +84,15 @@ body {
 .navbar-nav .nav-link:focus::after,
 .navbar-nav .nav-link.active::after {
   width: 80%;
+}
+
+.nav-controls .btn {
+  white-space: nowrap;
+}
+
+#themeToggle {
+  width: 38px;
+  line-height: 1;
 }
 
 .about-hero {

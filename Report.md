@@ -75,8 +75,10 @@ To fulfill the advanced API requirements, the product catalog (`products.html`) 
 
 ## 7. Screenshots & Verification
 
-### 1. API Integration & Network Request
-![API Network Request](screenshots/Api.png)
+### 1. API Integration (Live API Products)
+Electronics products loaded from the Fake Store API with `fetch()` and rendered as cards, with the "Refresh" button.
+
+![Live API Products](screenshots/Api.png)
 
 ### 2. UI Themes (Light & Dark Mode)
 | Light Mode | Dark Mode |
@@ -85,6 +87,11 @@ To fulfill the advanced API requirements, the product catalog (`products.html`) 
 
 ### 3. Responsive Mobile View
 ![Mobile Version](screenshots/Mobile.png)
+
+### 4. Signed-in State
+After sign-in the navbar shows "Hi, *name*" with a "Sign out" button, and the home page greets the user.
+
+![Signed-in Home Page](screenshots/SignedIn.png)
 
 ---
 
